@@ -1,0 +1,10 @@
+<h1>Friends Index</h1>
+<ul>
+{{#each}}
+<li>
+{{#link-to 'friends.show' this}}
+{{firstName}} {{lastName}}
+{{/link-to}}
+</li>
+{{/each}}
+</ul>
